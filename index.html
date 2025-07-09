@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book with Legends Technologies</title>
+  <link rel="icon" href="image/LEGENDS.jpg" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Book a Service with Legends Technologies</h1>
+    <form id="bookingForm">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+
+      <select id="service" required>
+        <option value="">Select a Service</option>
+        <option value="Web Design">Web Design</option>
+        <option value="Software Development">Software Development</option>
+        <option value="IT Training">IT Training</option>
+        <option value="Graphics Design">Graphics Design</option>
+        <option value="Consultation">Consultation</option>
+      </select>
+
+      <input type="date" id="date" required />
+      <input type="time" id="time" required />
+      <textarea id="notes" placeholder="Additional Notes (optional)"></textarea>
+
+      <button type="submit" id="submitBtn">📩 Book Now</button>
+    </form>
+  </div>
+
+  <!-- Toast Message -->
+  <div id="thankYouMsg" class="hidden">✅ Thank you! Booking request sent.</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
